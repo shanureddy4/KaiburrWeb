@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-md-3 col-lg-3 padd">
+            <!--form for creating user-->
+            <form>
+                <h2 class="h4 mb-4">Create a Server</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="name" name="name" [(ngModel)]="name" class="form-control" id="name"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <input type="id" name="id" [(ngModel)]="id" class="form-control" id="id" placeholder="Enter Id">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="name" [(ngModel)]="language" name="language" class="form-control" id="language"
+                            placeholder="Language">
+                    </div>
+                    <div class="form-group">
+                        <input type="name" [(ngModel)]="framework" name="framework" class="form-control" id="Framework"
+                            placeholder="Framework">
+                    </div>
+                </div>
+                <button (click)="Create()" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+        <!-- <div class="col col-md-3 col-lg-3">
+           
+  
+        </div> -->
+        <div class="col col-md-6 col-lg-6 padd">
+             <!--Search and Delete operations-->
+             <form> 
+                <h2 class="h4 mb-4">Server Operations</h2>
+                <div class="form-row">
+                    <input [(ngModel)]="Id" type="name" class="form-control" id="name" placeholder="Enter ID">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" (click)="Search()">Search</button>
+                    <button class="btn btn-danger" (click)="Delete()">Delete</button>
+                </div>
+            </form>
+            <!--user table-->
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Language</th>
+                    <th>Framework</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let server of servers">
+                        <td>{{server.name}}</td>
+                        <td>{{server.id}}</td>
+                        <td>{{server.language}}</td>
+                        <td>{{server.framework}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
