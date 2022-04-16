@@ -16,6 +16,6 @@ By default app loads data inside the table <br>
 **GET server by ID**
 ![GET](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/get.png)
 **PUT server**
-![PUT] (https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/put.png)
+![PUT](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/put.png)
 **DELETE server**
 ![DELETE](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/delete.png)
