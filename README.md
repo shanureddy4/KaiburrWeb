@@ -10,5 +10,12 @@ Spring boot application api endpoints. with that endpoints we were able to acces
 * Goto ```http://{yourhostipaddress}:4200``` to access the application.
 * Angular application is associated with spring boot application. So if you change angular application port, you need to change **@CrossOrigin** annotation inside the springboot application.
 ### Output
-By default app loads data inside the table
-[GET all]()
+By default app loads data inside the table <br>
+**GET all servers**
+![GET all](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/default%20get.png)
+**GET server by ID**
+![GET](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/get.png)
+**PUT server**
+![PUT] (https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/put.png)
+**DELETE server**
+![DELETE](https://github.com/shanureddy4/KaiburrWeb/blob/master/screenshots/delete.png)
