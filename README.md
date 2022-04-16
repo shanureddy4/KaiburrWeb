@@ -1,7 +1,7 @@
 # Overview
 This angular project is frontend UI for this [SpringBoot](https://github.com/shanureddy4/WebApiTask) Application (Task 1). Therefore inorder to run this application springboot application must run on background. So clone and run the spring boot application first. Installation guide provided in that repository.
 ## Getting Started
-Spring boot application api endpoints. with that endpoints we were able to access our Angular application.
+Spring boot application provide api endpoints with that we were able to access our Angular application.
 ### Building the project
 * After clonning springboot application run on background.
 * Now clone this angular project. Inside the directory type ```npm install``` to install required packages.
