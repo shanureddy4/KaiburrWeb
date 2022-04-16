@@ -9,7 +9,7 @@ import { ServerModule } from '../server/server.module';
 })
 export class ServerOperationsComponent implements OnInit {
   servers:any;
-  Id:any;
+  serverId:any;
 
 //identifiers for form fields
 name:any;
@@ -25,19 +25,18 @@ framework:any;
     this.service.getServers().subscribe(data=>this.servers=data);
   }
   Search(){
- 
-    this.service.getServer(this.Id).subscribe((data)=>this.servers=[data],
-    (error)=>{
-      alert("Could not find server with "+this.Id)
+    this.service.getServer(this.serverId).subscribe((data)=>this.servers=[data],
+        (error)=>{
+      alert("Could not find server with "+this.serverId)
     })
   }
   Delete(){
-    this.service.deleteServer(this.Id).subscribe(()=>{
-      alert(this.Id +" server deleted")
+    this.service.deleteServer(this.serverId).subscribe(()=>{
+      alert(this.serverId +" server deleted")
       this.getAll()
     },(error)=>
     {
-      alert("Could not find server with "+this.Id)
+      alert("Could not find server with "+this.serverId)
     })
   }
   Create(){

@@ -1,27 +1,14 @@
-# KaiburrWeb
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Overview
+This angular project is frontend UI for this [SpringBoot](https://github.com/shanureddy4/WebApiTask) Application (Task 1). Therefore inorder to run this application springboot application must run on background. So clone and run the spring boot application first. Installation guide provided in that repository.
+## Getting Started
+Spring boot application api endpoints. with that endpoints we were able to access our Angular application.
+### Building the project
+* After clonning springboot application run on background.
+* Now clone this angular project. Inside the directory type ```npm install``` to install required packages.
+* Now type ```ng serve``` to run our application
+* By default springboot application runs on port ```8080``` and angular appliacation runs on port ```4200```
+* Goto ```http://{yourhostipaddress}:4200``` to access the application.
+* Angular application is associated with spring boot application. So if you change angular application port, you need to change **@CrossOrigin** annotation inside the springboot application.
+### Output
+By default app loads data inside the table
+[GET all]()
