@@ -20,10 +20,10 @@ export class ServerService {
     let params = new HttpParams().set("id",id);
     return this.http.delete("http://localhost:8080/api/",{params:params})
   }
-  postServer(server:ServerModule)
+  putServer(server:ServerModule)
   {
     const headers = {'content-type':'application/json'}
     const body = JSON.stringify(server)
-    return this.http.post("http://localhost:8080/api/",body,{'headers':headers})
+    return this.http.put("http://localhost:8080/api/",body,{'headers':headers})
   }
 }

@@ -45,10 +45,10 @@ framework:any;
     server.name=this.name;
     server.language= this.language;
     server.framework= this.framework;
-    this.service.postServer(server).subscribe(()=>{
+    this.service.putServer(server).subscribe(()=>{
       this.getAll()
       alert(this.id+" server added")
       
-    },(error)=>alert("post aborted"))
+    },(error)=>alert("put aborted"))
   }
 }
